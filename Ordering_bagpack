@@ -1,0 +1,7 @@
+ @Test(priority = 2 , dependsOnMethods = "Log_in")
+  public void bagpack() {
+	  
+	  driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();   // Add a bagpack
+	  driver.findElement(By.id("remove-sauce-labs-backpack")).click();          // Remove a bagpack
+	  driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();   // Add again a bagpack
+  }
